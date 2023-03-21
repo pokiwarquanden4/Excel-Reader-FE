@@ -48,8 +48,7 @@ function App() {
                 return (
                   <tr key={index}>
                     <td>{items.id}</td>
-                    <td>{items.name}</td>
-                    <td>{items.pass}</td>
+                    <td>{items.imeis}</td>
                   </tr>
                 );
               })}
