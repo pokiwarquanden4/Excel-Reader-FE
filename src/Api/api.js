@@ -7,7 +7,11 @@ export const getTable = () => {
 };
 
 export const importExcel = (payload) => {
-  return axios.post(`${URL}/excelReader`, payload);
+  return axios.post(`${URL}/excelReader`, payload, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
 };
 
 export const exportExcel = (fileName, filePath) => {
